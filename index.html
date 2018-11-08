@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -76,49 +75,182 @@
     "description": "Educator, writer and content creator. Google Developer Expert in Web Technologies and Angular. Host of AngularAir."
 }
     </script>
+    <style>
+      body {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif, Arial;
+      }
+      h2 {
+        margin: 0;
+        color: #de0435;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      a:visited, a {
+        color: black;
+      }
+      .profile {
+        max-width: 800px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+      }
+      .profile > * {
+        padding: 1em;
+      }
+      .profile > div {
+        max-width: 490px;
+      }
+      .profile h1 {
+        font-size: 2.4em;
+        margin: 0 0 10px 0;
+      }
+      .profile p {
+        margin: 0;
+        font-size: 1.4em;
+      }
+      .profile img {
+        border-radius: 50%;
+        width: 240px;
+        height: 240px;
+      }
+      .where {
+        max-width: 800px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .angular-air {
+        width: 50%;
+        min-width: 400px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+      }
+      .angular-air img {
+        width: 180px;
+        height: 180px;
+      }
+      .angular-air p {
+        margin: 0;
+        font-size: 1.2em;
+
+      }
+      .social-media {
+        width: 370px;
+        min-width: 370px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        padding-left: 30px;
+      }
+      .social-media h2 {
+        font-size: 2.4em;
+        width: 149px;
+      }
+      .social-media ul {
+        display: flex;
+        flex-flow: row wrap;
+        width: 200px;
+        padding: 0;
+      }
+      .social-media ul li {
+        margin-right: 10px;
+        font-size: 1.2em;
+      }
+      .courses ul, .talks ul {
+        margin-bottom: 20px;
+      }
+      .courses, .talks {
+        max-width: 800px;
+        width: 100%;
+        padding-left: 60px;
+      }
+      @media (max-width: 670px) {
+        body {
+          min-width: 417px;
+        }
+        .profile h1 {
+          font-size: 1.6em;
+        }
+        .profile p {
+          font-size: 1.2em;
+        }
+        .profile img {
+          width: 100px;
+          height: 100px;
+        }
+        .angular-air img {
+          width: 80px;
+          height: 80px;
+          margin-left: 14px;
+        }
+        .angular-air p {
+          font-size: 1.2em;
+        }
+        .social-media h2 {
+          font-size: 1.6em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <section>
-      <h1>Justin Schwartzenberger</h1>
-      <img src="schwarty-avatar.jpg" alt="Justin Schwartzenbeger Avatar Image">
-      <p>
-        Educator, writer and content creator. Google Developer Expert in Web Technologies and Angular.
-      </p>
+    <section class="profile">
+      <img src="schwarty-avatar.jpg" alt="Justin Schwartzenberger Avatar Image">
       <div>
+        <h1>Justin Schwartzenberger</h1>
+        <p>
+          Educator, writer and content creator. Google Developer Expert in Web Technologies and Angular.
+        </p>
+      </div>
+    </section>
+    <div class="where">
+      <section class="angular-air">
         <a href="http://angularair.com"><img src="ng-air-logo-light.png" alt="AngularAir Logo"></a>
         <p>
           Host of <a href="http://angularair.com">AngularAir</a>, a weekly video podcast about all things <a href="https://angular.io">Angular</a>.
         </p>
-      </div>
-    </section>
-    <section class="social-media">
-      <h2>Follow Me</h2>
-      <ul>
-        <li>
+      </section>
+      <section class="social-media">
+        <h2>Follow Me</h2>
+        <ul>
+          <li>
             <a href="https://twitter.com/schwarty">Twitter</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="https://github.com/jschwarty">GitHub</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="https://www.linkedin.com/in/justinschwartzenberger">LinkedIn</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="http://instagram.com/instaschwarty">Instagram</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="http://stackoverflow.com/users/349596/justin-schwartzenberger">StackOverflow</a>
-        </li>
-      </ul>
-    </section>
+          </li>
+          <li>
+            <a href="https://blog.schwarty.com/">Blog</a>
+          </li>
+        </ul>
+      </section>
+    </div>
     <section class="courses">
-      <h2>Lynda.com / LinkedIn Learning Courses</h2>
+      <h2>LinkedIn Learning Courses</h2>
       <ul>
         <li>
-          <a href="https://www.lynda.com/Angular-tutorials/Angular-Essential-Training/540347-2.html">Angular Essential Training</a>
+          <a href="https://www.linkedin.com/learning/angular-essential-training">Angular Essential Training</a>
         </li>
         <li>
-          <a href="https://www.lynda.com/AngularJS-tutorials/Angular-2-Forms-Data-Binding-Validation/461451-2.html">Angular Forms: Data Binding and Validation</a>
+          <a href="https://www.linkedin.com/learning/angular-2-forms-data-binding-and-validation">Angular Forms: Data Binding and Validation</a>
         </li>
       </ul>
       <h2>Pluralsight Courses</h2>
@@ -144,9 +276,6 @@
           <a href="https://youtu.be/J5Bvy4KhIs0?list=PLOETEcp3DkCq788xapkP_OU-78jhTf68j">Angular 2's Fresh Approach to Style (ng-conf 2016)</a>
         </li>
       </ul>
-    </section>
-    <section class="other">
-      <a href="https://blog.schwarty.com">Blog</a>
     </section>
   </body>
 </html>
